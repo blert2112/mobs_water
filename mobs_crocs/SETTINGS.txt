@@ -1,0 +1,21 @@
+
+-- SETTINGS
+
+ENABLE_WALKERS		= true
+-- these guys are spawned on land near water, they do not
+-- float so they will not attack you if they happen to
+-- stumble into the water (L.O.S. limitation*)
+
+ENABLE_FLOATERS		= true
+-- these guys are spawned in shallow water, they float so they
+-- will follow you onto land to take a bite out of you
+
+ENABLE_SWIMMERS		= true
+-- these guys are spawned in shallow water, they do not float so
+-- they will only attack if you attack first (L.O.S. limitation*)
+
+
+-- * note: Mobs not attacking while underwater is a limitation of
+--		the MineTest LineOfSight function used in the "mobs_redo"
+--		mod to check if there is anything to attack. Seems that
+--		mobs can't see through water.
