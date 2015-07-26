@@ -19,7 +19,7 @@ if mobs.mod and mobs.mod == "redo" then
 	local l_spawn_chance	= 60000
 
 -- load settings
-	dofile(minetest.get_modpath("mobs_crocs").."\\SETTINGS.txt")
+	dofile(minetest.get_modpath("mobs_crocs").."/SETTINGS.txt")
 	if not ENABLE_WALKERS then
 		l_spawn_chance = l_spawn_chance - 20000
 	end
