@@ -6424,14 +6424,6 @@ Frame Root {
        0.000000, 0.000000, 1.000000, 0.000000,
        0.000000, 0.000000, 0.000000, 1.000000;;
     }
-    Mesh { // Camera mesh
-      0;
-      0;
-      MeshNormals { // Camera normals
-        0;
-        0;
-      } // End of Camera normals
-    } // End of Camera mesh
   } // End of Camera
   Frame Model {
     FrameTransformMatrix {
@@ -6440,14 +6432,6 @@ Frame Root {
        0.000000, 0.000000, 1.000000, 0.000000,
        0.000000, 0.000000, 0.000000, 1.000000;;
     }
-    Mesh { // Model mesh
-      0;
-      0;
-      MeshNormals { // Model normals
-        0;
-        0;
-      } // End of Model normals
-    } // End of Model mesh
   } // End of Model
 } // End of Root
 AnimationSet Global {
