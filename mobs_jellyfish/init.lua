@@ -5,6 +5,7 @@ if mobs.mod and mobs.mod == "redo" then
 		type = "animal",
 		attack_type = "dogfight",
 		damage = 5,
+		reach = 1,
 		hp_min = 5,
 		hp_max = 10,
 		armor = 100,
