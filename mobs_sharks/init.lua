@@ -56,6 +56,9 @@ if mobs.mod and mobs.mod == "redo" then
 			run_velocity = 6,
 			jump = false,
 			stepheight = 0.1,
+			drops = {
+				{name = "mobs:meat_raw", chance = 1, min = 1, max = 3},
+			},
 			fly = true,
 			fly_in = "default:water_source",
 			fall_speed = 0,
@@ -107,6 +110,9 @@ if mobs.mod and mobs.mod == "redo" then
 			run_velocity = 4,
 			jump = false,
 			stepheight = 0.1,
+			drops = {
+				{name = "mobs:meat_raw", chance = 1, min = 1, max = 3},
+			},
 			fly = true,
 			fly_in = "default:water_source",
 			fall_speed = -1,
@@ -142,6 +148,9 @@ if mobs.mod and mobs.mod == "redo" then
 			run_velocity = 4,
 			jump = false,
 			stepheight = 0.1,
+			drops = {
+				{name = "mobs:meat_raw", chance = 1, min = 1, max = 3},
+			},
 			fly = true,
 			fly_in = "default:water_source",
 			fall_speed = -1,
