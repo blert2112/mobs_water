@@ -42,6 +42,9 @@ if mobs.mod and mobs.mod == "redo" then
 		run_velocity = 0.3,
 		jump = false,
 		fly = false,
+		drops = {
+			{name = "mobs:meat_raw", chance = 1, min = 1, max = 3},
+		},
 		floats = 1,
 		water_damage = 0,
 		lava_damage = 5,
@@ -87,6 +90,9 @@ if mobs.mod and mobs.mod == "redo" then
 		jump = false,
 		fly = true,
 		fly_in = "default:water_source",
+		drops = {
+			{name = "mobs:meat_raw", chance = 1, min = 1, max = 3},
+		},
 		fall_speed = 0,
 		floats = 1,
 		water_damage = 0,
