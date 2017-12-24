@@ -54,9 +54,15 @@ if mobs.mod and mobs.mod == "redo" then
 		follow = "farming:carrot",
 		on_rightclick = function(self, clicker)
 			self.state = ""
-			set_velocity(self, 0)
+			--set_velocity(self, 0)
+			self.object:setvelocity({
+				--local yaw = (self.object:get_yaw() or 0) + self.rotate
+				x = 0, --sin(yaw) * -v
+				y = self.object:getvelocity().y,
+				z = 0 --cos(yaw) * v
+			})
 			self.object:set_animation({x=self.animation.hide_start, y=self.animation.hide_end}, self.animation.speed_normal, 0)
-			minetest.after(5, function() 
+			minetest.after(5, function()
 				self.state = "stand"
 			end)
 			mobs:capture_mob(self, clicker, 0, 80, 100, true, nil)
