@@ -54,6 +54,8 @@ if mobs.mod and mobs.mod == "redo" then
 			makes_footstep_sound = false,
 			walk_velocity = 4,
 			run_velocity = 6,
+			jump = false,
+			stepheight = 0.1,
 			fly = true,
 			fly_in = "default:water_source",
 			fall_speed = 0,
@@ -63,7 +65,7 @@ if mobs.mod and mobs.mod == "redo" then
 			lava_damage = 10,
 			light_damage = 0,
 			animation = l_anims,
-			do_custom = function(self)
+			--[[do_custom = function(self)
 				if HELP_WITH_EXPERIMENT then
 					local p = self.object:getpos()
 					local a = self.object:getvelocity()
@@ -78,7 +80,7 @@ if mobs.mod and mobs.mod == "redo" then
 					end
 					self.object:setvelocity(a)
 				end
-			end
+			end]]
 		})
 		--name, nodes, neighbours, minlight, maxlight, interval, chance, active_object_count, min_height, max_height
 		mobs:spawn_specific("mobs_sharks:shark_lg", l_spawn_in, l_spawn_near, -1, 20, 30, l_spawn_chance, 1, -31000, 0)
@@ -103,6 +105,8 @@ if mobs.mod and mobs.mod == "redo" then
 			makes_footstep_sound = false,
 			walk_velocity = 2,
 			run_velocity = 4,
+			jump = false,
+			stepheight = 0.1,
 			fly = true,
 			fly_in = "default:water_source",
 			fall_speed = -1,
@@ -136,6 +140,8 @@ if mobs.mod and mobs.mod == "redo" then
 			makes_footstep_sound = false,
 			walk_velocity = 2,
 			run_velocity = 4,
+			jump = false,
+			stepheight = 0.1,
 			fly = true,
 			fly_in = "default:water_source",
 			fall_speed = -1,
