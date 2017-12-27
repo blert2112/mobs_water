@@ -48,6 +48,10 @@ if mobs.mod and mobs.mod == "redo" then
 			visual_size = {x=4, y=4},
 			sounds = l_sounds,
 			fly = false,
+			drops = {
+				{name = "mobs:meat_raw", chance = 1, min = 1, max = 3},
+				{name = "mobs:leather", chance = 1, min = 1, max = 2},
+			},
 			floats = 0,
 			stepheight = 1,
 			view_range = 10,
@@ -82,6 +86,10 @@ if mobs.mod and mobs.mod == "redo" then
 			visual_size = {x=3, y=3},
 			sounds = l_sounds,
 			fly = false,
+			drops = {
+				{name = "mobs:meat_raw", chance = 1, min = 1, max = 3},
+				{name = "mobs:leather", chance = 1, min = 1, max = 2},
+			},
 			stepheight = 1,
 			view_range = 10,
 			water_damage = 0,
@@ -116,6 +124,10 @@ if mobs.mod and mobs.mod == "redo" then
 			sounds = l_sounds,
 			fly = true,
 			fly_in = "default:water_source",
+			drops = {
+				{name = "mobs:meat_raw", chance = 1, min = 1, max = 3},
+				{name = "mobs:leather", chance = 1, min = 1, max = 2},
+			},
 			fall_speed = -1,
 			floats = 0,
 			view_range = 10,
