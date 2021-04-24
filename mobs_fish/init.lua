@@ -9,7 +9,7 @@ local SPRITE_VERSION = false	-- set to true to use upright sprites instead of me
 	local l_spawn_chance	= 10000
 	local l_cc_hand			= 25
 	local l_cc_net			= 80
-	local l_water_level		= minetest.setting_get("water_level") - 1
+	local l_water_level		= minetest.settings:get("water_level") - 1
 	local l_anims = {
 		speed_normal = 24,		speed_run = 24,
 		stand_start = 1,		stand_end = 80,
@@ -19,7 +19,7 @@ local SPRITE_VERSION = false	-- set to true to use upright sprites instead of me
 	local l_visual = "mesh"
 	local l_visual_size = {x=.75, y=.75}
 	local l_clown_mesh = "animal_clownfish.b3d"
-	local l_trop_mesh = "fish_blue_white.b3d"	
+	local l_trop_mesh = "fish_blue_white.b3d"
 	local l_clown_textures = {
 		{"clownfish.png"},
 		{"clownfish2.png"}
@@ -34,7 +34,7 @@ local SPRITE_VERSION = false	-- set to true to use upright sprites instead of me
 		l_visual = "upright_sprite"
 		l_visual_size = {x=.5, y=.5}
 		l_clown_mesh = nil
-		l_trop_mesh = nil		
+		l_trop_mesh = nil
 		l_clown_textures = {{"animal_clownfish_clownfish_item.png"}}
 		l_trop_textures = {{"animal_fish_blue_white_fish_blue_white_item.png"}}
 	end
