@@ -51,7 +51,7 @@ if mobs.mod and mobs.mod == "redo" then
 		follow = "farming:carrot",
 		on_rightclick = function(self, clicker)
 			self.state = ""
-			set_velocity(self, 0)
+			self:set_velocity(0)
 			self.object:set_animation({x=self.animation.hide_start, y=self.animation.hide_end}, self.animation.speed_normal, 0)
 			minetest.after(5, function() 
 				self.state = "stand"
